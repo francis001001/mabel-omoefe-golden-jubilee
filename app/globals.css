@@ -1,26 +1,127 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Color palette */
+  --color-ivory: #fbf7ef;
+  --color-ivory-warm: #f3ecdc;
+  --color-ivory-deep: #ebe2cc;
+  --color-gold: #b8893a;
+  --color-gold-deep: #8a6420;
+  --color-gold-light: #d4ad62;
+  --color-ink: #1a1410;
+  --color-ink-soft: #3d342a;
+  --color-emerald: #0f3a2e;
+  --color-cork: #c9a875;
+  --color-cork-deep: #a8895a;
+
+  /* Font families — wired to next/font variables in layout.tsx */
+  --font-italiana: var(--font-italiana);
+  --font-cormorant: var(--font-cormorant);
+  --font-caveat: var(--font-caveat);
+  --font-inter: var(--font-inter);
+
+  /* Custom animations */
+  --animate-fade-up: fade-up 1.4s ease-out;
+  --animate-soft-bounce: soft-bounce 2s ease-in-out infinite;
+  --animate-filmstrip: filmstrip-scroll 30s linear infinite;
+  --animate-filmstrip-lg: filmstrip-scroll-lg 60s linear infinite;
+
+}
+@keyframes filmstrip-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(calc(-50% - 6px), 0, 0); }
+}
+@keyframes filmstrip-scroll-lg {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(calc(-50% - 8px), 0, 0); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes soft-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============ Custom utilities (Tailwind v4 @utility) ============ */
+
+@utility paper-texture {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(184, 137, 58, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(15, 58, 46, 0.03) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' /%3E%3CfeColorMatrix values='0 0 0 0 0.7 0 0 0 0 0.55 0 0 0 0 0.25 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@utility cork-board {
+  background:
+    radial-gradient(circle at 30% 40%, rgba(168, 137, 90, 0.15), transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(168, 137, 90, 0.12), transparent 50%),
+    linear-gradient(135deg, #c9a875 0%, #a8895a 100%);
+  box-shadow:
+    inset 0 0 60px rgba(0, 0, 0, 0.2),
+    0 30px 60px -20px rgba(26, 20, 16, 0.4);
+}
+
+@utility cork-noise {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.8' numOctaves='2' /%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0 0.15 0 0 0 0.3 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility gold-gradient-text {
+  background: linear-gradient(180deg, #d4ad62 0%, #b8893a 50%, #8a6420 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility gold-gradient-text-light {
+  background: linear-gradient(180deg, #d4ad62, #b8893a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility gold-gradient-text-footer {
+  background: linear-gradient(180deg, #d4ad62, #8a6420);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility filmstrip-edge {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #1a1410 0,
+    #1a1410 20px,
+    #fbf7ef 20px,
+    #fbf7ef 30px,
+    #1a1410 30px,
+    #1a1410 50px
+  );
+  background-size: 50px 30px;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
 }
