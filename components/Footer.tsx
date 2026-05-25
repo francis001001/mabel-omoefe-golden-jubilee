@@ -10,6 +10,17 @@ export default function Footer() {
       <div className="font-inter text-[0.65rem] tracking-[0.4em] uppercase text-gold/70">
         Mabel @ 50 · Warri · June 2026
       </div>
+      <div className="font-inter text-[0.6rem] tracking-[0.2em] uppercase text-ivory/30 mt-6">
+        Created with love by{" "}
+        <a
+          href="https://www.softtechedgeltd.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-ivory/50 hover:text-gold/70 transition-colors"
+        >
+          Soft Tech Edge Limited
+        </a>
+      </div>
     </footer>
   );
 }

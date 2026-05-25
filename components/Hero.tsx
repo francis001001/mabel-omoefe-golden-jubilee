@@ -61,7 +61,7 @@ export default function Hero() {
           <div className="w-full h-full" style={{ filter: "sepia(0.08) saturate(0.95)" }}>
             {/* <Placeholder text="img 1 (hero portrait)" /> */}
             
-              <Image src="/images/3.jpeg" alt="Mabel" fill className="object-cover" priority />
+              <Image src="/images/3.jpeg" alt="Mabel" sizes="100%" fill className="object-cover" priority />
            
           </div>
         </div>

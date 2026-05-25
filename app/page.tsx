@@ -7,6 +7,7 @@ import Filmstrip from "@/components/Filmstrip";
 import Access from "@/components/Access";
 import Rsvp from "@/components/Rsvp";
 import Gift from "@/components/Gift";
+import Wishes from "@/components/Wishes";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Access />
       <Rsvp />
       <Gift />
+      <Wishes />
       <Footer />
     </main>
   );
