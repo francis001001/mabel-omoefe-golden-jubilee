@@ -9,12 +9,14 @@ import Rsvp from "@/components/Rsvp";
 import Gift from "@/components/Gift";
 import Wishes from "@/components/Wishes";
 import Footer from "@/components/Footer";
+import TwoJubilees from "@/components/TwoJubilees";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Invitation />
+      <TwoJubilees />
       <Moodboard />
       <Countdown />
       <Details />

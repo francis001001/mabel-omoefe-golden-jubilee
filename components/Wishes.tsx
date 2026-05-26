@@ -81,7 +81,7 @@ export default function Wishes() {
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. Aunty Grace"
               maxLength={80}
-              className="w-full bg-transparent border border-gold/30 font-cormorant text-lg text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30"
+              className="w-full bg-white border border-gold/30 font-inter text-sm text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30"
             />
           </div>
           <div className="mb-8">
@@ -94,7 +94,7 @@ export default function Wishes() {
               placeholder="Write your birthday message here…"
               rows={4}
               maxLength={500}
-              className="w-full bg-transparent border border-gold/30 font-cormorant text-lg text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30 resize-none"
+              className="w-full bg-white border border-gold/30 font-inter text-sm text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30 resize-none"
             />
           </div>
           <div className="text-center">
@@ -131,10 +131,10 @@ export default function Wishes() {
                   className="py-8 px-7 border border-gold/20 bg-ivory relative hover:border-gold/40 transition-colors"
                 >
                   <span className="absolute -top-px left-1/2 -translate-x-1/2 w-8 h-0.5 bg-gold/50" />
-                  <p className="font-cormorant italic text-lg text-ink-soft leading-[1.7] mb-5">
+                  <p className="font-inter text-sm text-ink leading-[1.8] mb-5">
                     &ldquo;{wish.message}&rdquo;
                   </p>
-                  <div className="font-italiana text-base text-gold-deep tracking-wider">
+                  <div className="font-inter text-xs font-semibold tracking-[0.15em] uppercase text-gold-deep">
                     — {wish.name}
                   </div>
                 </div>

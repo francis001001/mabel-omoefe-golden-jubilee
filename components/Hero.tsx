@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Polaroid, { Placeholder } from "./Polaroid";
+import Polaroid from "./Polaroid";
 
 export default function Hero() {
   return (
@@ -8,17 +8,17 @@ export default function Hero() {
       <div className="absolute inset-[3vh_3vw] border border-gold/25 pointer-events-none" />
 
       {/* Corner accents */}
-      <div className="absolute top-[3vh] left-[3vw] w-10 h-10 border-2 border-gold border-r-0 border-b-0 z-3" />
-      <div className="absolute top-[3vh] right-[3vw] w-10 h-10 border-2 border-gold border-l-0 border-b-0 z-3" />
-      <div className="absolute bottom-[3vh] left-[3vw] w-10 h-10 border-2 border-gold border-r-0 border-t-0 z-3" />
-      <div className="absolute bottom-[3vh] right-[3vw] w-10 h-10 border-2 border-gold border-l-0 border-t-0 z-3" />
+      <div className="absolute top-[3vh] left-[3vw] w-10 h-10 border-2 border-gold border-r-0 border-b-0 z-[3]" />
+      <div className="absolute top-[3vh] right-[3vw] w-10 h-10 border-2 border-gold border-l-0 border-b-0 z-[3]" />
+      <div className="absolute bottom-[3vh] left-[3vw] w-10 h-10 border-2 border-gold border-r-0 border-t-0 z-[3]" />
+      <div className="absolute bottom-[3vh] right-[3vw] w-10 h-10 border-2 border-gold border-l-0 border-t-0 z-[3]" />
 
       {/* Floating polaroid top-left (hidden on mobile) */}
       <Polaroid
-        src="/images/1.jpeg"
+      src="/images/1.jpeg"
         placeholder="img 2"
         caption="always smiling"
-        className="hidden md:block absolute top-[8%] left-[3%] w-32.5 h-[160px] -rotate-[8deg]"
+        className="hidden md:block absolute top-[8%] left-[3%] w-[130px] h-[160px] -rotate-[8deg]"
       />
 
       {/* Left text block */}
@@ -48,6 +48,10 @@ export default function Hero() {
           A Golden Jubilee · Warri 2026
           <span className="text-gold text-[0.55rem]">◆</span>
         </div>
+
+        <div className="mt-4 font-cormorant italic text-base md:text-lg text-ink-soft">
+          &amp; celebrating 25 years of marriage
+        </div>
       </div>
 
       {/* Hero portrait */}
@@ -59,19 +63,16 @@ export default function Hero() {
 
           {/* Portrait — swap for next/image when ready */}
           <div className="w-full h-full" style={{ filter: "sepia(0.08) saturate(0.95)" }}>
-            {/* <Placeholder text="img 1 (hero portrait)" /> */}
-            
-              <Image src="/images/3.jpeg" alt="Mabel" sizes="100%" fill className="object-cover" priority />
-           
+            <Image src="/images/3.jpeg" alt="Mabel" sizes="100%" fill className="object-cover" priority />
           </div>
         </div>
       </div>
 
       {/* Floating polaroid bottom-right (hidden on mobile) */}
       <Polaroid
-        src="/images/2.jpeg"
+      src="/images/2.jpeg"
         placeholder="img 3"
-        caption="our mama"
+        caption="mama mia"
         className="hidden md:block absolute bottom-[10%] right-[5%] w-[140px] h-[170px] rotate-[6deg]"
       />
     </section>

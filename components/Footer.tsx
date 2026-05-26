@@ -8,7 +8,7 @@ export default function Footer() {
         &ldquo;Grey hair is a crown of glory; it is gained by a righteous life.&rdquo; — Proverbs 16:31
       </p>
       <div className="font-inter text-[0.65rem] tracking-[0.4em] uppercase text-gold/70">
-        Mabel @ 50 · Warri · June 2026
+        Mabel @ 50 · 25 Years of Marriage · Warri · June 2026
       </div>
       <div className="font-inter text-[0.6rem] tracking-[0.2em] uppercase text-ivory/30 mt-6">
         Created with love by{" "}
