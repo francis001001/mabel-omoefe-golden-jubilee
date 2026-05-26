@@ -33,7 +33,7 @@ export default function Reveal({
 
   return (
     <div ref={ref} className={`reveal ${className}`}>
-      {children
+      {children}
     </div>
   );
 }
