@@ -28,7 +28,7 @@ export default function Hero() {
           Save The Date
         </div>
 
-        <div className="font-cormorant text-[clamp(7rem,16vw,14rem)] gold-gradient-text mb-2 relative inline-block">
+        <div className="font-cormorant text-[clamp(7rem,12vw,12rem)] gold-gradient-text mb-2 relative inline-block">
           50
           <span className="absolute bottom-[0.2em] left-0 w-1/2 h-px bg-gradient-to-r from-gold to-transparent" />
         </div>
