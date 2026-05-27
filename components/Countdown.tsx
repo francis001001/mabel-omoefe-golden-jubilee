@@ -53,10 +53,10 @@ export default function Countdown() {
               className="py-5 md:py-8 px-1 md:px-2 border border-gold/30 relative transition-all duration-300 hover:border-gold hover:bg-gold/5"
             >
               <span className="absolute top-0 left-1/2 -translate-x-1/2 w-[30px] h-px bg-gold" />
-              <span className="font-italiana text-[clamp(2.5rem,6vw,4.5rem)] leading-none gold-gradient-text-light block">
+              <span className="font-cormorant text-[clamp(2.5rem,6vw,4.5rem)] leading-none gold-gradient-text-light block">
                 {pad(c.num)}
               </span>
-              <div className="font-inter text-xs tracking-[0.2em] uppercase text-ivory/70 mt-3 font-medium">
+              <div className="font-cormorant text-xs tracking-[0.2em] uppercase text-ivory/70 mt-3 font-medium">
                 {c.label}
               </div>
             </div>

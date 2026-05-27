@@ -57,7 +57,7 @@ export default function Details() {
             >
               <span className="absolute top-[-1px] left-0 w-[60px] h-0.5 bg-gold" />
               <span className="font-cormorant text-3xl text-gold mb-3 block">✦</span>
-              <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep mb-4 font-medium">
+              <div className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold-deep mb-4 font-medium">
                 {d.title}
               </div>
               <div className="font-cormorant font-medium text-[clamp(1.6rem,2.5vw,2.2rem)] text-ink leading-tight mb-3 tracking-[0.01em] whitespace-pre-line">

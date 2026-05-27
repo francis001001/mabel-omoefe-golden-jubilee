@@ -34,7 +34,7 @@ export default function Polaroid({
         )}
       </div>
       {caption && (
-        <div className="absolute bottom-2 left-0 right-0 text-center font-caveat text-base text-ink-soft">
+        <div className="absolute bottom-2 left-0 right-0 text-center font-cormorant text-base text-ink-soft">
           {caption}
         </div>
       )}

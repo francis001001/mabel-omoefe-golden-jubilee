@@ -72,7 +72,7 @@ export default function Wishes() {
           className="max-w-[600px] mx-auto mb-20 text-left"
         >
           <div className="mb-5">
-            <label className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep block mb-2 font-medium">
+            <label className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold-deep block mb-2 font-medium">
               Your Name
             </label>
             <input
@@ -85,7 +85,7 @@ export default function Wishes() {
             />
           </div>
           <div className="mb-8">
-            <label className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep block mb-2 font-medium">
+            <label className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold-deep block mb-2 font-medium">
               Your Wish
             </label>
             <textarea
@@ -101,7 +101,7 @@ export default function Wishes() {
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="font-inter text-xs tracking-[0.2em] uppercase py-3.5 px-10 border border-gold bg-transparent text-gold-deep hover:bg-gold hover:text-ivory transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+              className="font-cormorant text-xs tracking-[0.2em] uppercase py-3.5 px-10 border border-gold bg-transparent text-gold-deep hover:bg-gold hover:text-ivory transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
             >
               {status === "submitting" ? "Sending…" : "Send Wish"}
             </button>
@@ -121,7 +121,7 @@ export default function Wishes() {
         {/* Wishes display */}
         {wishes.length > 0 && (
           <div className="max-w-[900px] mx-auto">
-            <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold/80 mb-10 font-medium">
+            <div className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold/80 mb-10 font-medium">
               ✦ {wishes.length} {wishes.length === 1 ? "wish" : "wishes"} received ✦
             </div>
             <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -134,7 +134,7 @@ export default function Wishes() {
                   <p className="font-cormorant text-lg md:text-xl text-ink leading-[1.6] mb-5">
                     &ldquo;{wish.message}&rdquo;
                   </p>
-                  <div className="font-inter text-xs font-medium tracking-[0.2em] uppercase text-gold-deep">
+                  <div className="font-cormorant text-xs font-medium tracking-[0.2em] uppercase text-gold-deep">
                     — {wish.name}
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Wishes() {
               <div className="mt-12">
                 <button
                   onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                  className="font-inter text-xs tracking-[0.2em] uppercase py-3 px-9 border border-gold/50 text-gold-deep hover:bg-gold hover:text-ivory hover:border-gold transition-all duration-300 font-medium"
+                  className="font-cormorant text-xs tracking-[0.2em] uppercase py-3 px-9 border border-gold/50 text-gold-deep hover:bg-gold hover:text-ivory hover:border-gold transition-all duration-300 font-medium"
                 >
                   Load more · {wishes.length - visible} remaining
                 </button>

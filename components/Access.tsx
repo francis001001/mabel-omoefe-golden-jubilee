@@ -22,7 +22,7 @@ export default function Access() {
               className="py-10 px-8 border border-gold/25 bg-ivory/60 backdrop-blur-sm transition-all duration-300 hover:border-gold hover:-translate-y-1"
             >
               <div className="font-cormorant text-4xl text-gold mb-4">✶</div>
-              <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep mb-4 font-medium">
+              <div className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold-deep mb-4 font-medium">
                 {p.heading}
               </div>
               <p className="font-cormorant text-xl md:text-2xl text-ink leading-[1.5]">

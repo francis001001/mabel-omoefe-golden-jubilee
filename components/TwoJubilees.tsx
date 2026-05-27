@@ -20,10 +20,10 @@ export default function TwoJubilees() {
         <div className="grid md:grid-cols-[1fr_auto_1fr] grid-cols-1 gap-8 md:gap-12 items-center">
           {/* GOLD — 50 */}
           <div className="flex flex-col items-center">
-            <div className="font-italiana text-[clamp(5rem,10vw,8rem)] leading-none gold-gradient-text">
+            <div className="font-cormorant text-[clamp(5rem,10vw,8rem)] leading-none gold-gradient-text">
               50
             </div>
-            <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep mt-4 mb-2 font-medium">
+            <div className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold-deep mt-4 mb-2 font-medium">
               Golden Jubilee
             </div>
             <div className="font-cormorant italic text-xl text-ink-soft">
@@ -41,7 +41,7 @@ export default function TwoJubilees() {
           {/* SILVER — 25 */}
           <div className="flex flex-col items-center">
             <div
-              className="font-italiana text-[clamp(5rem,10vw,8rem)] leading-none"
+              className="font-cormorant text-[clamp(5rem,10vw,8rem)] leading-none"
               style={{
                 background:
                   "linear-gradient(180deg, #e8e4d8 0%, #b8b3a5 50%, #8a8478 100%)",
@@ -52,7 +52,7 @@ export default function TwoJubilees() {
             >
               25
             </div>
-            <div className="font-inter text-xs tracking-[0.3em] uppercase text-ink-soft mt-4 mb-2 font-medium">
+            <div className="font-cormorant text-xs tracking-[0.3em] uppercase text-ink-soft mt-4 mb-2 font-medium">
               Silver Anniversary
             </div>
             <div className="font-cormorant italic text-xl text-ink-soft">

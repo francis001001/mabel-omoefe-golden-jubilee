@@ -59,7 +59,7 @@ export default function Gift() {
             </span>
             <button
               onClick={handleCopy}
-              className={`font-inter text-xs tracking-[0.2em] uppercase py-3 px-6 border transition-all duration-300 font-medium ${
+              className={`font-cormorant text-xs tracking-[0.2em] uppercase py-3 px-6 border transition-all duration-300 font-medium ${
                 copied
                   ? "bg-emerald border-emerald text-ivory"
                   : "border-gold bg-transparent text-gold-deep hover:bg-gold hover:text-ivory"

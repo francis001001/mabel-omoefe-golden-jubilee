@@ -38,7 +38,7 @@ export default function Rsvp() {
               className="py-10 px-8 border border-gold-light/30 transition-all duration-300 hover:border-gold-light hover:bg-gold-light/5 relative"
             >
               <span className="absolute top-[-1px] left-1/2 -translate-x-1/2 w-10 h-0.5 bg-gold-light" />
-              <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold-light mb-3 font-medium">
+              <div className="font-cormorant text-xs tracking-[0.3em] uppercase text-gold-light mb-3 font-medium">
                 {c.role}
               </div>
               <div className="font-cormorant font-medium text-2xl md:text-3xl text-ivory mb-3 tracking-[0.02em]">

@@ -57,7 +57,7 @@ export default function Moodboard() {
  
           {/* Handwritten note */}
           <div
-            className="absolute bottom-[6%] right-[8%] bg-ivory px-6 py-4 -rotate-[6deg] shadow-[0_8px_16px_rgba(0,0,0,0.2)] font-caveat text-2xl md:text-3xl text-ink z-[5] max-w-[220px] leading-snug"
+            className="absolute bottom-[6%] right-[8%] bg-ivory px-6 py-4 -rotate-[6deg] shadow-[0_8px_16px_rgba(0,0,0,0.2)] font-cormorant text-lg md:text-xl text-ink z-[5] max-w-[220px] leading-snug"
           >
             <span
               className="absolute -top-[7px] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
@@ -94,7 +94,7 @@ function PinnedPhoto({
        
       </div>
       {caption && (
-        <div className="absolute bottom-1.5 left-0 right-0 text-center font-caveat text-base text-ink-soft">
+        <div className="absolute bottom-1.5 left-0 right-0 text-center font-cormorant text-base text-ink-soft">
           {caption}
         </div>
       )}
