@@ -31,7 +31,7 @@ export default function Gift() {
         />
 
         <SectionMark>A Token of Love</SectionMark>
-        <h2 className="font-italiana text-[clamp(2rem,5vw,3.5rem)] text-ink tracking-[0.08em] mt-4">
+        <h2 className="font-cormorant font-medium text-[clamp(2.4rem,5vw,3.5rem)] text-ink tracking-[0.02em] mt-4">
           Gift The Celebrant
         </h2>
 
@@ -40,23 +40,26 @@ export default function Gift() {
           <div className="absolute -top-px -left-px w-[30px] h-[30px] border-2 border-gold border-r-0 border-b-0" />
           <div className="absolute -bottom-px -right-px w-[30px] h-[30px] border-2 border-gold border-l-0 border-t-0" />
 
-          <p className="font-cormorant italic text-xl text-ink-soft mb-6 leading-[1.6]">
+          <p className="font-cormorant text-xl md:text-2xl text-ink mb-6 leading-[1.6]">
             Your presence is the greatest gift.
             <br />
             Should you wish to bless mama further —
           </p>
 
-          <div className="font-italiana text-[clamp(1.2rem,2.5vw,1.6rem)] text-ink mb-4 tracking-[0.05em]">
+          <div className="font-cormorant font-medium text-[clamp(1.4rem,2.5vw,1.8rem)] text-ink mb-4 tracking-[0.03em]">
             OMOEFE MABEL OHWODIAME
           </div>
 
           <div className="flex items-center justify-center gap-4 mb-4 flex-wrap">
-            <span className="font-italiana text-[clamp(1.6rem,3.5vw,2.2rem)] text-gold-deep tracking-[0.1em]">
+            <span
+              className="font-cormorant font-medium text-[clamp(2rem,4vw,2.8rem)] text-gold-deep tracking-[0.08em]"
+              style={{ fontVariantNumeric: "tabular-nums" }}
+            >
               {ACCOUNT_NUMBER}
             </span>
             <button
               onClick={handleCopy}
-              className={`font-inter text-[0.65rem] tracking-[0.3em] uppercase py-2.5 px-5 border transition-all duration-300 ${
+              className={`font-inter text-xs tracking-[0.2em] uppercase py-3 px-6 border transition-all duration-300 font-medium ${
                 copied
                   ? "bg-emerald border-emerald text-ivory"
                   : "border-gold bg-transparent text-gold-deep hover:bg-gold hover:text-ivory"
@@ -66,7 +69,7 @@ export default function Gift() {
             </button>
           </div>
 
-          <div className="font-cormorant italic text-lg text-ink-soft">OPay</div>
+          <div className="font-cormorant italic text-xl text-ink-soft">OPay</div>
         </div>
       </section>
     </Reveal>

@@ -27,14 +27,14 @@ export default function Moodboard() {
       <section className="py-[12vh] px-[6vw] text-center relative overflow-hidden bg-gradient-to-b from-ivory to-ivory-warm">
         <div className="mb-20">
           <SectionMark>The Moodboard</SectionMark>
-          <h2 className="font-italiana text-[clamp(2rem,5vw,3.5rem)] text-ink tracking-[0.08em] mt-4">
+          <h2 className="font-cormorant font-medium text-[clamp(2.4rem,5vw,3.5rem)] text-ink tracking-[0.02em] mt-4">
             A Life In Frames
           </h2>
-          <p className="max-w-[600px] mx-auto mt-6 font-cormorant italic text-xl text-ink-soft leading-[1.6]">
+          <p className="max-w-[650px] mx-auto mt-6 font-cormorant italic text-xl md:text-2xl text-ink-soft leading-[1.6]">
             Pinned memories from fifty radiant years — a glimpse of the woman we love.
           </p>
         </div>
-
+ 
         <div className="relative max-w-[1200px] mx-auto cork-board cork-noise px-6 py-10 md:px-12 md:py-16 min-h-[700px] rounded border-[12px] border-[#6b4f2e]">
           {/* Desktop board */}
           <div className="hidden md:grid relative z-[2] grid-cols-12 auto-rows-[80px] gap-6">
@@ -42,7 +42,7 @@ export default function Moodboard() {
               <PinnedPhoto key={i} text={p.img} caption={p.caption} className={p.classes} />
             ))}
           </div>
-
+ 
           {/* Mobile board */}
           <div className="grid md:hidden relative z-[2] grid-cols-12 auto-rows-[60px] gap-3">
             {pinnedPhotos.map((p, i) => (
@@ -54,10 +54,10 @@ export default function Moodboard() {
               />
             ))}
           </div>
-
+ 
           {/* Handwritten note */}
           <div
-            className="absolute bottom-[6%] right-[8%] bg-ivory px-6 py-4 -rotate-[6deg] shadow-[0_8px_16px_rgba(0,0,0,0.2)] font-caveat text-xl md:text-2xl text-ink-soft z-[5] max-w-[200px] leading-snug"
+            className="absolute bottom-[6%] right-[8%] bg-ivory px-6 py-4 -rotate-[6deg] shadow-[0_8px_16px_rgba(0,0,0,0.2)] font-caveat text-2xl md:text-3xl text-ink z-[5] max-w-[220px] leading-snug"
           >
             <span
               className="absolute -top-[7px] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.3)]"

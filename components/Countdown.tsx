@@ -38,12 +38,12 @@ export default function Countdown() {
       <section className="py-[8vh] px-[6vw] bg-ink text-ivory text-center relative overflow-hidden">
         <div className="absolute inset-[2vh_2vw] border border-gold/40 pointer-events-none" />
 
-        <div className="font-cormorant italic font-light text-[clamp(1.3rem,2.5vw,1.8rem)] text-gold-light mb-2">
+        <div className="font-cormorant italic text-[clamp(1.4rem,2.5vw,2rem)] text-gold-light mb-2">
           The wait until we dance —
         </div>
 
-        <h2 className="font-italiana text-[clamp(1.8rem,4vw,3rem)] tracking-[0.1em] mb-12 text-ivory">
-          COUNTING DOWN TO JUNE 20
+        <h2 className="font-cormorant font-medium text-[clamp(2rem,4vw,3rem)] tracking-[0.02em] mb-12 text-ivory">
+          Counting Down to June 20
         </h2>
 
         <div className="grid grid-cols-4 gap-2 md:gap-4 max-w-[800px] mx-auto">
@@ -56,7 +56,7 @@ export default function Countdown() {
               <span className="font-italiana text-[clamp(2.5rem,6vw,4.5rem)] leading-none gold-gradient-text-light block">
                 {pad(c.num)}
               </span>
-              <div className="font-inter text-[0.7rem] tracking-[0.3em] uppercase text-ivory/60 mt-3">
+              <div className="font-inter text-xs tracking-[0.2em] uppercase text-ivory/70 mt-3 font-medium">
                 {c.label}
               </div>
             </div>

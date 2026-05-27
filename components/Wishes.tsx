@@ -59,20 +59,20 @@ export default function Wishes() {
         <div className="absolute inset-[2vh_2vw] border border-gold/20 pointer-events-none" />
 
         <SectionMark>Birthday Wishes</SectionMark>
-        <h2 className="font-italiana text-[clamp(2rem,5vw,3.5rem)] text-ink tracking-[0.08em] mt-4">
+        <h2 className="font-cormorant font-medium text-[clamp(2.4rem,5vw,3.5rem)] text-ink tracking-[0.02em] mt-4">
           Leave a Wish for Mabel
         </h2>
-        <p className="font-cormorant italic text-xl text-ink-soft max-w-130 mx-auto mt-4 mb-14 leading-[1.6]">
+        <p className="font-cormorant text-xl md:text-2xl text-ink max-w-[650px] mx-auto mt-4 mb-14 leading-[1.6]">
           Share your love, prayers, and kind words for the celebrant.
         </p>
 
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="max-w-150 mx-auto mb-20 text-left"
+          className="max-w-[600px] mx-auto mb-20 text-left"
         >
           <div className="mb-5">
-            <label className="font-inter text-[0.65rem] tracking-[0.35em] uppercase text-gold-deep block mb-2">
+            <label className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep block mb-2 font-medium">
               Your Name
             </label>
             <input
@@ -81,11 +81,11 @@ export default function Wishes() {
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g. Aunty Grace"
               maxLength={80}
-              className="w-full bg-white border border-gold/30 font-inter text-sm text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30"
+              className="w-full bg-white border border-gold/30 font-cormorant text-lg text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30"
             />
           </div>
           <div className="mb-8">
-            <label className="font-inter text-[0.65rem] tracking-[0.35em] uppercase text-gold-deep block mb-2">
+            <label className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep block mb-2 font-medium">
               Your Wish
             </label>
             <textarea
@@ -94,24 +94,24 @@ export default function Wishes() {
               placeholder="Write your birthday message here…"
               rows={4}
               maxLength={500}
-              className="w-full bg-white border border-gold/30 font-inter text-sm text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30 resize-none"
+              className="w-full bg-white border border-gold/30 font-cormorant text-lg text-ink px-4 py-3 outline-none focus:border-gold transition-colors placeholder:text-ink/30 resize-none leading-[1.6]"
             />
           </div>
           <div className="text-center">
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="font-inter text-[0.7rem] tracking-[0.4em] uppercase py-3.5 px-10 border border-gold bg-transparent text-gold-deep hover:bg-gold hover:text-ivory transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="font-inter text-xs tracking-[0.2em] uppercase py-3.5 px-10 border border-gold bg-transparent text-gold-deep hover:bg-gold hover:text-ivory transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
             >
               {status === "submitting" ? "Sending…" : "Send Wish"}
             </button>
             {status === "success" && (
-              <p className="font-cormorant italic text-emerald mt-4 text-lg">
+              <p className="font-cormorant italic text-emerald mt-4 text-xl">
                 Your wish has been sent — thank you! ✦
               </p>
             )}
             {status === "error" && (
-              <p className="font-cormorant italic text-red-600 mt-4 text-lg">
+              <p className="font-cormorant italic text-red-600 mt-4 text-xl">
                 Something went wrong. Please try again.
               </p>
             )}
@@ -120,8 +120,8 @@ export default function Wishes() {
 
         {/* Wishes display */}
         {wishes.length > 0 && (
-          <div className="max-w-200 mx-auto">
-            <div className="font-inter text-[0.6rem] tracking-[0.4em] uppercase text-gold/60 mb-10">
+          <div className="max-w-[900px] mx-auto">
+            <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold/80 mb-10 font-medium">
               ✦ {wishes.length} {wishes.length === 1 ? "wish" : "wishes"} received ✦
             </div>
             <div className="grid md:grid-cols-2 gap-6 text-left">
@@ -131,10 +131,10 @@ export default function Wishes() {
                   className="py-8 px-7 border border-gold/20 bg-ivory relative hover:border-gold/40 transition-colors"
                 >
                   <span className="absolute -top-px left-1/2 -translate-x-1/2 w-8 h-0.5 bg-gold/50" />
-                  <p className="font-inter text-sm text-ink leading-[1.8] mb-5">
+                  <p className="font-cormorant text-lg md:text-xl text-ink leading-[1.6] mb-5">
                     &ldquo;{wish.message}&rdquo;
                   </p>
-                  <div className="font-inter text-xs font-semibold tracking-[0.15em] uppercase text-gold-deep">
+                  <div className="font-inter text-xs font-medium tracking-[0.2em] uppercase text-gold-deep">
                     — {wish.name}
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Wishes() {
               <div className="mt-12">
                 <button
                   onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                  className="font-inter text-[0.65rem] tracking-[0.4em] uppercase py-3 px-9 border border-gold/50 text-gold-deep hover:bg-gold hover:text-ivory hover:border-gold transition-all duration-300"
+                  className="font-inter text-xs tracking-[0.2em] uppercase py-3 px-9 border border-gold/50 text-gold-deep hover:bg-gold hover:text-ivory hover:border-gold transition-all duration-300 font-medium"
                 >
                   Load more · {wishes.length - visible} remaining
                 </button>

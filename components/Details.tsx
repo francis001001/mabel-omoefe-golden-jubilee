@@ -42,7 +42,7 @@ export default function Details() {
 
         <div className="text-center">
           <SectionMark>Event Details</SectionMark>
-          <h2 className="font-italiana text-[clamp(2rem,5vw,3.5rem)] text-ink tracking-[0.08em] mt-4">
+          <h2 className="font-cormorant font-medium text-[clamp(2.4rem,5vw,3.5rem)] text-ink tracking-[0.02em] mt-4">
             The Affair
           </h2>
         </div>
@@ -56,22 +56,22 @@ export default function Details() {
               }`}
             >
               <span className="absolute top-[-1px] left-0 w-[60px] h-0.5 bg-gold" />
-              <span className="font-italiana text-2xl text-gold mb-3 block">✦</span>
-              <div className="font-inter text-[0.7rem] tracking-[0.4em] uppercase text-gold-deep mb-4">
+              <span className="font-cormorant text-3xl text-gold mb-3 block">✦</span>
+              <div className="font-inter text-xs tracking-[0.3em] uppercase text-gold-deep mb-4 font-medium">
                 {d.title}
               </div>
-              <div className="font-italiana text-[clamp(1.5rem,2.5vw,2rem)] text-ink leading-tight mb-2 tracking-[0.02em] whitespace-pre-line">
+              <div className="font-cormorant font-medium text-[clamp(1.6rem,2.5vw,2.2rem)] text-ink leading-tight mb-3 tracking-[0.01em] whitespace-pre-line">
                 {d.main}
                 {d.italicMain && (
                   <>
                     <br />
-                    <em className="font-cormorant italic text-xl">
+                    <em className="font-cormorant italic font-normal text-xl md:text-2xl">
                       {d.italicMain}
                     </em>
                   </>
                 )}
               </div>
-              <div className="font-cormorant italic text-lg text-ink-soft leading-[1.5]">
+              <div className="font-cormorant italic text-lg md:text-xl text-ink-soft leading-[1.5]">
                 {d.sub}
               </div>
             </div>

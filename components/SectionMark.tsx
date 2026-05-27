@@ -9,7 +9,7 @@ export default function SectionMark({ children, variant = "default" }: Props) {
 
   return (
     <div
-      className={`inline-flex items-center gap-4 font-inter text-[0.7rem] tracking-[0.5em] uppercase mb-10 ${textColor}`}
+      className={`inline-flex items-center gap-4 font-inter text-xs tracking-[0.3em] uppercase mb-10 font-medium ${textColor}`}
     >
       <span className={`w-10 h-px ${lineColor}`} />
       {children}

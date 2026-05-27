@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* Left text block */}
       <div className="md:pl-8 md:text-left text-center md:order-1 order-2 animate-fade-up">
-        <div className="font-inter text-[0.7rem] tracking-[0.5em] uppercase text-gold-deep mb-8 flex items-center gap-4 md:justify-start justify-center">
+        <div className="font-inter text-xs tracking-[0.5em] uppercase text-gold-deep mb-8 flex items-center gap-4 md:justify-start justify-center">
           <span className="w-10 h-px bg-gold" />
           Save The Date
         </div>
@@ -33,17 +33,17 @@ export default function Hero() {
           <span className="absolute bottom-[0.2em] left-0 w-1/2 h-px bg-gradient-to-r from-gold to-transparent" />
         </div>
 
-        <div className="font-cormorant italic font-light text-[clamp(1.2rem,2vw,1.6rem)] text-ink-soft mt-6 mb-1">
+        <div className="font-cormorant italic   text-[clamp(1.2rem,2vw,1.6rem)] text-ink-soft mt-6 mb-1">
           Mrs. Ohwodiame
         </div>
 
-        <h1 className="font-italiana text-[clamp(1.8rem,4vw,3rem)] text-ink tracking-[0.08em] leading-tight mb-6">
+        <h1 className="font-cormorant text-[clamp(1.8rem,4vw,3rem)] text-ink tracking-[0.08em] leading-tight mb-6">
           MABEL
           <br />
           OMOEFE
         </h1>
 
-        <div className="font-inter text-[0.65rem] tracking-[0.4em] uppercase text-gold-deep inline-flex items-center gap-4 md:justify-start justify-center">
+        <div className="font-inter text-xs tracking-[0.4em] uppercase text-gold-deep inline-flex items-center gap-4 md:justify-start justify-center">
           <span className="text-gold text-[0.55rem]">◆</span>
           A Golden Jubilee · Warri 2026
           <span className="text-gold text-[0.55rem]">◆</span>
